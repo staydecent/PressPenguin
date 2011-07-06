@@ -1,0 +1,51 @@
+/* Included Stylesheets & Fonts
++ + + + + + + + + + + + + + + + + + + + + + + + + + + */
+
+@import url('reset.css');
+@import url('comments.css');
+
+
+/* Basic Document Setup
++ + + + + + + + + + + + + + + + + + + + + + + + + + + */
+
+html, body {
+	-webkit-text-size-adjust: none
+	}
+	
+.alignleft {
+	float: left;
+	}
+	
+.alignright {
+	float: right;
+	}
+	
+#main_content article.post .content ol, #main_content article.post .content ul, #main_content article.post .content p, 
+#main_content article.page .content ol, #main_content article.page .content ul, #main_content article.page .content p{
+	margin-bottom: 1em;
+	}
+	
+#main_content article.post .content ul li, #main_content article.page .content ul li {
+	list-style: disc inside;
+	}
+	
+#main_content article.post .content ol li, #main_content article.page .content ol li {
+	list-style: decimal inside;
+	}
+	
+.post-navigation {
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+	}
+
+.post-navigation .navigation-previous {
+	width: 50%;
+	float: left;
+	}	
+
+.post-navigation .navigation-next {
+	width: 50%;
+	float: right;
+	text-align: right;
+	}
