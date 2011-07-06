@@ -21,7 +21,7 @@ html, body {
 	}
 	
 #main_content article.post .content ol, #main_content article.post .content ul, #main_content article.post .content p, 
-#main_content article.page .content ol, #main_content article.page .content ul, #main_content article.page .content p{
+#main_content article.page .content ol, #main_content article.page .content ul, #main_content article.page .content p {
 	margin-bottom: 1em;
 	}
 	
