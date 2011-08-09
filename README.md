@@ -15,7 +15,3 @@ I've found that the comments section is usually left until later in the process,
 ### functions.php
 
 The functions.php file is stripped of a lot of fat, and includes a function for custom excerpt lengths with a custom 'Read More' link.
-
-### Internet Explorer
-
-I've included some jQuery for transparent png's in IE6, for rounded corners, and an .htc file box-shadow. There's more info in the ie.css file.
