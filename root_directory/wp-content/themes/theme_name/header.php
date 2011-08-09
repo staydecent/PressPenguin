@@ -34,9 +34,6 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 		<!--[if IE ]><link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/ie.css"><![endif]-->
-		<!--[if lt IE 7 ]><script src="<?php bloginfo('template_directory'); ?>/js/supersleight/supersleight-min.js"></script><![endif]-->
-		<!--[if IE ]><script src="<?php bloginfo('template_directory'); ?>/js/curvycorners.src.js"></script><![endif]-->
-		<!--[if IE ]><script src="<?php bloginfo('template_directory'); ?>/js/ie.js"></script><![endif]-->
 		
 		<?php
 		if ( is_singular() && get_option( 'thread_comments' ) )
