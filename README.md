@@ -1,4 +1,5 @@
-# Little Penguin WordPress Theme Framework
+# PressPenguin
+## Lightweight WordPress Theme Framework
 A simple, lightweight theme framework for creating WordPress themes faster. I've compiled the code I always use in developing WordPress themes as well as a few plugins that I almost always include.
 
 ### Markup
