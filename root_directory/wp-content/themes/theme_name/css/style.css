@@ -40,12 +40,10 @@ html, body {
 	}
 
 .post-navigation .navigation-previous {
-	width: 50%;
 	float: left;
 	}	
 
 .post-navigation .navigation-next {
-	width: 50%;
 	float: right;
 	text-align: right;
 	}
