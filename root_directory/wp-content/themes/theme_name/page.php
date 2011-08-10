@@ -8,7 +8,7 @@
 				<header>
 					<h2><?php the_title(); ?></h2>
 				</header>
-				<span class="content"><?php the_content();?></span>
+				<div class="content"><?php the_content();?></div>
 				<?php endwhile; endif; ?>
 			</article>
 		</section><!--  #main_content-->		

@@ -8,7 +8,7 @@
 						<h2><?php the_title(); ?></h2>
 						<?php post_meta(); ?>
 					</header>
-					<span class="content"><?php the_content();?></span>
+					<div class="content"><?php the_content();?></div>
 														
 					<nav class="post-navigation">
 						<div class="navigation-previous"><?php previous_post_link('&laquo; %link') ?></div>
