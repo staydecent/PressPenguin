@@ -12,6 +12,10 @@ Stylesheets for layout are absent as this is meant as a framework to develop cus
 
 I've found that the comments section is usually left until later in the process, so I've also included a stylesheet for the comments area from the Twentyten theme just to get the comments going faster.
 
+### Plugins
+
+A small collection of plugins that have proven themselves crucial to almost any site have been included.
+
 ### functions.php
 
 The functions.php file is stripped of a lot of fat, and includes a function for custom excerpt lengths with a custom 'Read More' link.
