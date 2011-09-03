@@ -1,4 +1,4 @@
-# recommended Plugins
+# Recommended Plugins
 
 ## General
 + Contact Form 7 http://wordpress.org/extend/plugins/contact-form-7
