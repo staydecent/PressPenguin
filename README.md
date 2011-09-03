@@ -4,7 +4,7 @@ A simple, lightweight theme framework for creating WordPress themes faster. I've
 
 ### Markup
 
-The markup is clean and uses html5.
+The markup is cleanm, standards based html5.
 
 ### CSS
 
@@ -14,7 +14,7 @@ I've found that the comments section is usually left until later in the process,
 
 ### Plugins
 
-A small collection of plugins that have proven themselves crucial to almost any site have been included.
+I've included a list of plugins that have proven themselves crucials to many sites. This list will be actively maintained.
 
 ### functions.php
 
