@@ -49,7 +49,6 @@
 			<h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
 			<?php
 				wp_nav_menu( array( 'container' => 'nav', 'container_id' => 'primary', 'theme_location' => 'primary' ) );
-				//wp_nav_menu( array( 'container' => 'nav', 'container_id' => 'utility', 'theme_location' => 'utility' ) );
 				get_search_form();
 			?>
 		</header><!-- #masthead -->

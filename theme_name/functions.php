@@ -1,5 +1,14 @@
 <?php
 add_action( 'after_setup_theme', 'lps_theme_setup' );
+add_filter('body_class','expand_body_classes'); // Adds page slug to the body class
+
+include_once 'includes/excerpts.php'; // Custom Excerpts
+include_once 'includes/scripts.php'; // Enqued Scripts
+include_once 'includes/custom_field_functions.php'; // Functions for including/processing content from custom fields. See Readme for usage.
+/* Uncomment to create custom post types and custom taxonomies
+	include_once 'includes/post_types.php'; // Template for creating custom post types and custom taxonomies
+*/
+
 function lps_theme_setup() {
 	
 	global $content_width;
@@ -22,7 +31,6 @@ function wpi_stylesheet_uri($stylesheet_uri, $stylesheet_dir_uri){
 
 function lps_register_menus() {
 	register_nav_menus(array('primary'=>__('Primary Nav'),));
-	register_nav_menus(array('utility'=>__('Utility Nav'),));
 }
 
 function lps_register_sidebars() {
@@ -39,62 +47,31 @@ function lps_register_sidebars() {
 	);
 }
 
-function lps_load_scripts() {
-	wp_enqueue_script('basic', get_bloginfo('template_directory').'/js/main.js', array('jquery'), '1.0');
-	wp_enqueue_script('modernizr', get_bloginfo('template_directory').'/js/modernizr-2.0.6.js', array('jquery'), '1.0');
-	
-	if ( !is_admin() ) {
-		wp_deregister_script('jquery');
-		wp_register_script('jquery', ("http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"), false);
-		wp_enqueue_script('jquery');
-		}
-
-	if ( is_singular() && get_option( 'thread_comments' ) && comments_open() )
-		wp_enqueue_script( 'comment-reply' );	
-}
-
-function excerpt($limit) {
-      $excerpt = explode(' ', get_the_content(), $limit);
-      if (count($excerpt)>=$limit) {
-        array_pop($excerpt);
-        $excerpt = implode(" ",$excerpt).'...';
-      } else {
-        $excerpt = implode(" ",$excerpt);
-      } 
-      $excerpt = preg_replace('`\[[^\]]*]`','',$excerpt);
-      $excerpt = preg_replace("/<img(.*?)>/si", "", $excerpt);
-      $excerpt = preg_replace("/<em(.*?)>/si", "", $excerpt);
-  	  return $excerpt;preg_replace('`\[[^\]]*]`','',$excerpt);
-	
-}
-
-function custom_excerpt($length='',$more_txt='Read More') {
-	$default_length = 30;
-	if (empty($length)) {
-			$excerpt_length = $default_length;
-		} else {
-			$excerpt_length = $length;
-		}
-	$excerpt = excerpt($excerpt_length);
-	$link = '<a href="'.get_permalink($post->ID).'" class="more_link">'.$more_txt.'</a>';
-	$output = "$excerpt $link";
-	echo wpautop($output, true);
-}
-
 function post_meta() {
-	include 'meta.php';
+	include 'includes/meta.php';
 }
 
-function disable_version() { return ''; }
-add_filter('the_generator','disable_version');
+
+// Add page slug as body class. Also include the page parent
+function expand_body_classes($classes, $class='') {
+	global $wp_query;	
+	$post_id = $wp_query->post->ID;
+	if(is_page($post_id )){
+		$page = get_page($post_id);
+		//check for parent
+		if($page->post_parent>0){
+			$parent = get_page($page->post_parent);
+			$classes[] = sanitize_title($parent->post_title);
+		}
+		$classes[] = sanitize_title($page->post_title);
+	}
+	return $classes;// return the $classes array
+}
+
+
+// Clean up <head> and improve security.
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wp_generator');
-remove_action('wp_head', 'feed_links', 2);
-remove_action('wp_head', 'index_rel_link');
 remove_action('wp_head', 'wlwmanifest_link');
-remove_action('wp_head', 'feed_links_extra', 3);
-remove_action('wp_head', 'start_post_rel_link', 10, 0);
-remove_action('wp_head', 'parent_post_rel_link', 10, 0);
-remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);	
 
 ?>

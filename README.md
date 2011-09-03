@@ -20,5 +20,19 @@ I've included a list of plugins that have proven themselves crucials to many sit
 
 The functions.php file is stripped of a lot of fat, and includes a function for custom excerpt lengths with a custom 'Read More' link.
 
+### Custom Fields
+
+I've included a set of functions for retrieving and displaying content from custom fields. Use as following:
+
+    custom_field('field name', 'format', 'date format');  
+
+	get_custom_field($args);
+	
+Field = required
+Format = optional
+Date Format = optional
+
+For more info see http://www.littlepenguinstudio.com/2011/08/23/fetch-custom-field-values
+
 ### NOTE:
 Remember, never use "admin" as a username, and alwasy rename your table prefix in wp_config.php
