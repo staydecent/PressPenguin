@@ -35,4 +35,4 @@ Date Format = optional
 For more info see http://www.littlepenguinstudio.com/2011/08/23/fetch-custom-field-values
 
 ### NOTE:
-Remember, never use "admin" as a username, and alwasy rename your table prefix in wp_config.php
+Remember, never use "admin" as a username, and always rename your table prefix in wp_config.php
