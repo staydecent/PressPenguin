@@ -2,6 +2,7 @@
 add_action( 'after_setup_theme', 'lps_theme_setup' );
 add_filter('body_class','expand_body_classes'); // Adds page slug to the body class
 
+// Includes
 include_once 'includes/excerpts.php'; // Custom Excerpts
 include_once 'includes/scripts.php'; // Enqued Scripts
 include_once 'includes/custom_field_functions.php'; // Functions for including/processing content from custom fields. See Readme for usage.
@@ -47,6 +48,7 @@ function lps_register_sidebars() {
 	);
 }
 
+// Creates a <ul> with post meta information.
 function post_meta() {
 	include 'includes/meta.php';
 }

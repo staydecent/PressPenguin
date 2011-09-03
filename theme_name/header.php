@@ -32,7 +32,8 @@
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/print.css" media="print" />
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
+		
+		<!-- Internet Explorer stylesheet. You can use .i6, .ie7, .ie8, .ie9 classes to target specific versions -->
 		<!--[if IE ]><link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/ie.css"><![endif]-->
 		
 		<?php

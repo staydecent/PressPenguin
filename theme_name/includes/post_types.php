@@ -1,9 +1,9 @@
 <?php
 
-add_action('init', 'posttype_register', 0);
-add_action("admin_init", "meta_boxes");
-add_action('save_post', 'save_details');
-add_filter( 'pre_get_posts' , 'ucc_include_custom_post_types' );
+add_action('init', 'posttype_register', 0); 					 // <- Post type registration
+add_action("admin_init", "meta_boxes");	    					 // <- Meta boxes for post types
+add_action('save_post', 'save_details');					 	 // <- Save input from post type admin screen
+add_filter( 'pre_get_posts' , 'ucc_include_custom_post_types' ); // <- Include custom post types on archive pages
 
 
 function posttype_register() { // The perameters of your custom post type.

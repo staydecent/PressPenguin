@@ -22,22 +22,26 @@
 			
 		// Google Map
 		elseif ($format == 'google_map') $fetch = display_google_map($fetch);
-	
 
 		return $fetch;
 	}
 
+	// Get and echo custom field data
 	function custom_field($field, $format = '', $date_format = 'F j, Y')
 	{
 		echo get_custom_field($field, $format, $date_format);
 	}
 
+	
+	// Formatting for dates
 	function format_date($date, $date_format)
 	{
 		$date = date($date_format, $date);
 		return $date;
 	}
 
+	
+	// Formatting for Google Maps
 	function display_google_map($code)
 	{
 		$code = html_entity_decode($code);
