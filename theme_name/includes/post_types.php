@@ -1,10 +1,15 @@
 <?php
 
-add_action('init', 'posttype_register', 0); 					 // <- Post type registration
-add_action("admin_init", "meta_boxes");	    					 // <- Meta boxes for post types
-add_action('save_post', 'save_details');					 	 // <- Save input from post type admin screen
+add_action('init', 'posttype_register', 0); // <- Post type registration
+add_action("admin_init", "meta_boxes"); // <- Meta boxes for post types
+add_action('save_post', 'save_details'); // <- Save input from post type admin screen
 add_filter( 'pre_get_posts' , 'ucc_include_custom_post_types' ); // <- Include custom post types on archive pages
 
+
+/*
+	Note: Change all instances of "posttype" to the name of your post type,
+		  and "custom_taxonomy" to the name of your taxonomy.
+*/
 
 function posttype_register() { // The perameters of your custom post type.
 	
