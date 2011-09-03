@@ -20,6 +20,5 @@ I've included a list of plugins that have proven themselves crucials to many sit
 
 The functions.php file is stripped of a lot of fat, and includes a function for custom excerpt lengths with a custom 'Read More' link.
 
-### .htaccess
-
-The .htaccess file protest the wp-config.php file and fights comment spam using the method from the following url: http://www.wprecipes.com/reduce-spam-on-your-wordpress-blog-by-using-htaccess?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+Wprecipes+%28WpRecipes.com%3A+Daily+recipes+to+cook+with+WordPress%29
+### NOTE:
+Remember, never use "admin" as a username, and alwasy rename your table prefix in wp_config.php
