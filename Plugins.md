@@ -2,6 +2,7 @@
 
 ## General
 + Contact Form 7 http://wordpress.org/extend/plugins/contact-form-7
++ Twitter Stream http://wordpress.org/extend/plugins/twitter-stream
 + Custom Taxonomy Sort http://wordpress.org/extend/plugins/custom-taxonomy-sort
 + ShareThis http://wordpress.org/extend/plugins/jw-share-this
 
