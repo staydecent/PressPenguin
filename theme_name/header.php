@@ -25,9 +25,10 @@
             }
             ?></title>
 
-		<meta name="description" content="<?php bloginfo('description') ?>">
-	
+		<meta name="title" content="<?php bloginfo('name'); ?>">
+		<meta name="description" content="<?php bloginfo('description') ?>">	
 		<meta http-equiv="content-type" content="<?php bloginfo('html_type') ?>; charset=<?php bloginfo('charset') ?>" />
+
 		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 		<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/print.css" media="print" />
 		<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.ico">
