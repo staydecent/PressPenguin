@@ -4,7 +4,7 @@ A simple, lightweight theme framework for creating WordPress themes faster. I've
 
 ### Markup
 
-The markup is cleanm, standards based html5.
+The markup is cleanm, semantic html5.
 
 ### CSS
 

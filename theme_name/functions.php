@@ -6,6 +6,8 @@ add_filter('body_class','expand_body_classes'); // Adds page slug to the body cl
 include_once 'includes/excerpts.php'; // Custom Excerpts
 include_once 'includes/scripts.php'; // Enqued Scripts
 include_once 'includes/custom_field_functions.php'; // Functions for including/processing content from custom fields. See Readme for usage.
+include_once 'includes/document_title.php';
+
 /* Uncomment to create custom post types and custom taxonomies
 	include_once 'includes/post_types.php'; // Template for creating custom post types and custom taxonomies
 */
