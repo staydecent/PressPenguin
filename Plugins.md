@@ -6,11 +6,16 @@ General
 + Twitter Stream http://wordpress.org/extend/plugins/twitter-stream
 + Custom Taxonomy Sort http://wordpress.org/extend/plugins/custom-taxonomy-sort
 + ShareThis http://wordpress.org/extend/plugins/jw-share-this
++ Ambrosite Next/Previous Post Link Plus http://wordpress.org/extend/plugins/ambrosite-nextprevious-post-link-plus
++ Ambrosite Next/Previous Page Link Plus http://wordpress.org/extend/plugins/ambrosite-nextprevious-page-link-plus
++ Google Syntax Highlighter for WordPress http://wordpress.org/extend/plugins/google-syntax-highlighter
++ Custom Taxonomy Sort http://wordpress.org/extend/plugins/custom-taxonomy-sort
 
 Development
 ===========
 + Regenerate Thumbnails http://wordpress.org/extend/plugins/regenerate-thumbnails
 + Show Template http://wordpress.org/extend/plugins/show-template
++ WordPress Database Backup http://wordpress.org/extend/plugins/wp-db-backup
 
 Performace & SEO
 ================
