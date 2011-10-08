@@ -10,6 +10,7 @@ General
 + Ambrosite Next/Previous Page Link Plus http://wordpress.org/extend/plugins/ambrosite-nextprevious-page-link-plus
 + Google Syntax Highlighter for WordPress http://wordpress.org/extend/plugins/google-syntax-highlighter
 + Custom Taxonomy Sort http://wordpress.org/extend/plugins/custom-taxonomy-sort
++ Better Related Posts
 
 Development
 ===========
